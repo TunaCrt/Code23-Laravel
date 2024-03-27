@@ -15,8 +15,9 @@
     <li><a href="/hakkimda">Hakkımda</a></li>
     <li><a href="/cv">Cv</a></li>
     <li><a href="iletisim">İletişim</a></li>
-    @yield('content')
 </ul>
+    @yield('content')
+
 
 <!-- <ol>
             @foreach($dizi as $d)
