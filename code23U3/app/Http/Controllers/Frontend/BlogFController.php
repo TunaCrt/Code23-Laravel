@@ -15,7 +15,7 @@ class BlogFController extends Controller
     {
         //
         $blogs = Blog::orderBy("id")->get();
-        return view("front.blogs.index",compact("blogs"));
+        return view("front.blogs.index", compact("blogs"));
     }
 
     /**
@@ -40,8 +40,8 @@ class BlogFController extends Controller
     public function show(string $id)
     {
         //
-        $blog = Blog::where("id",$id)->first();
-        return view("front.blogs.show",compact("blog"));
+        $blog = Blog::where("id", $id)->first();
+        return view("front.blogs.show", compact("blog"));
     }
 
     /**

@@ -1,4 +1,4 @@
-@extends("layouts.app")
+@extends("layouts1.app")
 @section("content")
 
     <h1>Blogs</h1>
@@ -6,7 +6,7 @@
     @if(isset($blog))
         <div class="row">
             <div class="col-2">
-                Photo
+                <img src="{{asset("Blogs/Photos/".$blog->photo)}}" height="150">
             </div>
             <div class="col-10">
                 <h2>{{$blog -> title}}</h2>
